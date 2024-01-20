@@ -8,3 +8,37 @@ For the purpose of this project, i installed docker desktop that is conpartible 
 
 <img width="546" alt="Screenshot 2024-01-18 at 21 18 16" src="https://github.com/Mubarokahh/Migration-to-the-Cloud-with-Containerization/assets/135038657/6fbe288d-d6dc-4efa-af59-05f586f17c5a">
 
+## Deploying mySQL into a container in docker engine.
+
+`docker run --name <container_name> -e MYSQL_ROOT_PASSWORD=<my-secret-pw> -d mysql/mysql-server:latest`
+
+I aaded the needed values into the command and the got the container up and running.
+
+<img width="1121" alt="Screenshot 2024-01-18 at 21 47 29" src="https://github.com/Mubarokahh/Migration-to-the-Cloud-with-Containerization/assets/135038657/aacc9a33-a1f0-45f2-92bb-c877436afd15">
+
+## Connecting to the MySQL Docker Container
+
+I connected directly to the mySQL server as to creating another container to serve as mySQL client
+
+`docker exec -it mubarokah mysql -uroot -p`
+
+<img width="691" alt="Screenshot 2024-01-20 at 18 09 57" src="https://github.com/Mubarokahh/Migration-to-the-Cloud-with-Containerization/assets/135038657/78b00cd2-3a73-4996-97c4-85b014f29b04">
+
+
+## Prepare database schema
+
+- Cloning the folowing repository (git clone https://github.com/darey-devops/tooling.git)
+
+- Exporting the location of the SQL file that contains data for setting up the MySQL database: `export tooling_db_schema=~/tooling_db_schema.sql`
+
+- Using the SQL script to create the database and prepare the schema:  `docker exec -i mysql-server mysql -uroot -p$MYSQL_PW < $tooling_db_schema`
+
+  <img width="675" alt="Screenshot 2024-01-20 at 22 23 34" src="https://github.com/Mubarokahh/Migration-to-the-Cloud-with-Containerization/assets/135038657/c9c2628a-96f9-4fbf-b8fc-2d1f0eca3fa1">
+
+
+
+
+
+
+
+
