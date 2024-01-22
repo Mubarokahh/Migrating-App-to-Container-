@@ -43,6 +43,26 @@ I connected directly to the mySQL server as to creating another container to ser
     $dbname = "toolingdb";
 
 
+## Runing the Tooling Application
+
+Containerizing the Tooling Appliaction
+
+- I ran the following command in the directory that has dockerfile
+
+  'docker build -t tooling:0.0.1'
+
+  <img width="1059" alt="Screenshot 2024-01-21 at 17 37 57" src="https://github.com/Mubarokahh/Migration-to-the-Cloud-with-Containerization/assets/135038657/57d368cc-2549-43c9-a499-f9c9f5022e01">
+
+  - Running the container
+ 
+   'docker run --network tooling_app_network -p 8085:80 -it tooling:0.0.1'
+
+  <img width="1390" alt="Screenshot 2024-01-21 at 18 03 17" src="https://github.com/Mubarokahh/Migration-to-the-Cloud-with-Containerization/assets/135038657/394ee02a-b2fc-4629-b650-e0481a7d3d15">
+
+
+
+
+
 
 
 
