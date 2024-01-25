@@ -64,6 +64,8 @@ Containerizing the Tooling Appliaction
 
 ## Migarating the php-Todo app into a containerized application
 
+- Cloning this repsository 'https://github.com/Mubarokahh/php-todo.git'
+
 
 
 
