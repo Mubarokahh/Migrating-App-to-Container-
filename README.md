@@ -1,4 +1,4 @@
- NF # MIGRATING TO THE CLOUD WITH CONTAINERIZATION
+ # MIGRATING TO THE CLOUD WITH CONTAINERIZATION
 In this project,when i talk about containers, I imply docker. Although there are other containerization technology,docker is the standard tool for deploying application its dependencies and configuration in a sandbox also known as containers in an operating system.
 
 For my previous projects, i have been using VMs to deploy web solution. For efficiency purpose, i will be using docker to deploy my application.Unlike a VM, Docker allocated not the whole guest OS for your application, but only isolated minimal part of it - this isolated container has all that your application needs and at the same time is lighter, faster, and can be shipped as a Docker image to multiple physical or virtual environments, as long as this environment can run Docker engine. This approach also solves the environment incompatibility issue. It is a well-known problem when a developer sends his application to you, you try to deploy it, deployment fails, and the developer replies, "- It works on my machine!". With Docker - if the application is shipped as a container, it has its own environment isolated from the rest of the world, and it will always work the same way on any server that has Docker engine.
@@ -64,7 +64,20 @@ Containerizing the Tooling Appliaction
 
 ## Migarating the php-Todo app into a containerized application
 
+
 - Cloning this repsository 'https://github.com/Mubarokahh/php-todo.git'
+- I created mysql container for the php-todo
+  
+  <img width="1244" alt="Screenshot 2024-01-29 at 12 11 20" src="https://github.com/Mubarokahh/Migration-to-the-Cloud-with-Containerization/assets/135038657/7eb5666d-85b9-43f0-9b7c-651a03f1a843">
+- The dockerfile
+
+  <img width="793" alt="Screenshot 2024-01-29 at 13 15 02" src="https://github.com/Mubarokahh/Migration-to-the-Cloud-with-Containerization/assets/135038657/6b27ad3e-628e-4b2d-b59a-a33c25e6204f">
+
+- Creating a docker image with the build command
+
+
+
+
 
 
 
