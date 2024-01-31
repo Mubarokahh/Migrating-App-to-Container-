@@ -74,6 +74,18 @@ Containerizing the Tooling Appliaction
   <img width="793" alt="Screenshot 2024-01-29 at 13 15 02" src="https://github.com/Mubarokahh/Migration-to-the-Cloud-with-Containerization/assets/135038657/6b27ad3e-628e-4b2d-b59a-a33c25e6204f">
 
 - Creating a docker image with the build command
+  
+ `docker build -t php-todo:0.0.3 .`
+
+  <img width="1073" alt="Screenshot 2024-01-29 at 13 30 24" src="https://github.com/Mubarokahh/Migration-to-the-Cloud-with-Containerization/assets/135038657/4c8d39de-081a-4efc-9735-12c4d6e0f3b8">
+
+- Running the container
+
+- Running the artisan migrate command inside the php-todo container since it was ignored during the build process
+<img width="438" alt="Screenshot 2024-01-29 at 16 16 00" src="https://github.com/Mubarokahh/Migration-to-the-Cloud-with-Containerization/assets/135038657/8dc7b3cd-043f-4452-beb6-c28aaee21c37">
+
+
+
 
 
 
